@@ -1,0 +1,102 @@
+:root {
+    --primary-blue: #3498db;
+    --secondary-pink: #e91e63;
+    --background-white: #ffffff;
+    --text-dark: #333333;
+    --border-color: #cccccc;
+}
+
+body {
+    background-color: var(--background-white);
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Define a altura da tela */
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+form {
+    width: 100%;
+    max-width: 600px; /* Define uma largura máxima para o formulário */
+    max-height: 80vh; /* Limita a altura do formulário */
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--background-white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destaque */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens dentro do formulário */
+    overflow-y: auto; /* Adiciona rolagem se necessário */
+}
+
+h2 {
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+    text-align: center; /* Centraliza o texto do título */
+}
+
+label {
+    font-weight: bold;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+    width: 100%; /* Faz o label ocupar toda a largura */
+    text-align: left; /* Mantém o alinhamento à esquerda */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="radio"] {
+    width: 100%; /* Faz o input ocupar toda a largura */
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.radio-group, .access-group {
+    display: flex;
+    justify-content: center; /* Centraliza os radios */
+    gap: 10px;
+}
+
+button {
+    background-color: var(--primary-blue);
+    color: var(--background-white);
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+button[type="button"]:hover {
+    background-color: var(--secondary-pink);
+}
+
+button[type="submit"] {
+    background-color: var(--secondary-pink);
+}
+
+button[type="submit"]:hover {
+    background-color: var(--primary-blue);
+}
+
+div {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+input:focus {
+    outline: 2px solid var(--primary-blue);
+}

@@ -1,0 +1,11 @@
+.background {
+    background-color: hsl(214, 8%, 17%); /* Cor de fundo */
+    height: 80vh; /* Ocupa 80% da altura da tela */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Coloca os itens em coluna */
+    padding: 20px; /* Adiciona um pouco de espaço interno */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total da div */
+    margin: auto; /* Centraliza a div em relação à tela */
+}
